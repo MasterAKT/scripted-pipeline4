@@ -13,7 +13,7 @@ data:
   test.json: |
     {
       "production" : "true"
-      name: "Akeem"
+      name : "Akeem"
     }
 kind: ConfigMap
 metadata:
