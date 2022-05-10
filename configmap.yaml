@@ -3,5 +3,5 @@ kind: ConfigMap
 metadata:
   name: test-config
 data:
-  test.json: 
-{{ .Files.Get "test.json" | indent 4 }}
+  config.json: |-
+    {{ .Files.Get "config.json" | indent 4 }}
