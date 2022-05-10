@@ -5,7 +5,3 @@ metadata:
 data:
   test.json: |
 {{ .Files.Get "test.json" | indent 4 }}
-
-
-
-
