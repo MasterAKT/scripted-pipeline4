@@ -2,32 +2,10 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: test-config
-  data:
+data:
   test.json: |
 {{ .Files.Get "test.json" | indent 4 }}
 
 
 
 
-
-
-# apiVersion: v1
-# data:
-#   test.json: |
-# {{ .Files.Get "test.json" | indent 4 }}
-# kind: ConfigMap
-# metadata:
-#   name: test-config
-
-# ---
-
-# apiVersion: v1
-# data:
-#   test.json: |
-#     {
-#       "production" : "true"
-#     }
-# kind: ConfigMap
-# metadata:
-#   name: test-config
-#   namespace: default
