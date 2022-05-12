@@ -3,7 +3,4 @@ kind: ConfigMap
 metadata:
   name: test
 data:
-  test.json: |-
-{{ $ .Files.Get "config.json" | indent 4 }}
-
-
+  "https://raw.githubusercontent.com/MasterAKT/scripted-pipeline4/ENG003/test.json"
